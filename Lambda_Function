@@ -1,0 +1,17 @@
+#lambda functions->>Anonymous one liner functions
+#layman syntax==>>> function name=lambda parameters:what you want to return
+
+
+#lambda function to find sum of two numbers
+sm=lambda x,y:x+y
+print(sm(1,3))
+
+
+#lambda function to find average of 4 numbers
+x=lambda a,b,c,d :(a+b+c+d)/4
+print(x(1,2,3,4))
+
+#main application of lambda function is when function has to be pass through another function via argument for convinience:)
+def fn (fx,val):
+    print(fx+val)
+fn(sm(1,3),3)
