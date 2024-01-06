@@ -1,0 +1,18 @@
+#Write a Python program that creates a generator function that generates all prime numbers between two given numbers.
+
+def my_generator (x,y):
+    for i in range (x,y+1):
+        f=1
+        for j in range(2,i):
+            if(i%j==0):
+                f=0
+                
+        if(f):
+            yield i
+
+x=int(input("Number 1"))
+y=int(input("number 2"))
+
+gen=my_generator(x,y)
+for i in  gen:
+    print(i)
