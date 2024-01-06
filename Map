@@ -1,0 +1,8 @@
+#syntax-> new_list=list(map(func,list1)) => meaning list1 k har element ko func mein daalke new_list mein daaldo. eaazy peezy
+
+def addone(x):
+    return x+1
+
+l=[1,2,3,4,5,0,66,7,7]
+l2=list(map(addone,l))
+print(l2)
