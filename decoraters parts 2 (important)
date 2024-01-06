@@ -1,0 +1,16 @@
+#creating my greet decorators
+def greet (fn):
+    def returning_function(*args,**kwargs): #acknowledging the arguments 
+        print("Welcome to the function")
+        fn(*args,**kwargs) #arguments
+        print("WORK DONE,THANK YOU!!")
+    
+    return returning_function
+    
+#clearly decorator took a function as an input and returning a function after modifying the input function :)
+
+@greet
+def add(a,b):
+    print(a+b)
+    
+print(add(2,4))
