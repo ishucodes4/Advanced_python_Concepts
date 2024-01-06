@@ -1,0 +1,12 @@
+syntax=> newlist=filter(filter_function,oldlist) ->>>>Every element is passed through the filter function and if it return true then passed through the newlist :)
+
+l=[1,2,3,4,5,6,7,8,9,0]
+def iseven(x):
+    if(x%2==0):
+        return True
+    else:
+        return False
+
+lnew=list(filter(iseven,l))
+print(lnew)
+   
