@@ -1,0 +1,36 @@
+#list comprehension->
+ #create a list of numbers under 100 that is divisible by 3.
+ 
+ 
+ #without list comprehension->
+
+'''lst=[]
+for i in range (0,101):
+    if(i%3==0):
+        lst.append(i)
+print(lst)'''
+
+#now doing it using list comprehension->(below)
+'''lst=[i for i in range (0,101) if i%3==0]
+print(lst)'''
+
+#understanding dictionary comprehension.
+dic={i:f"item{i}" for i in range (6) if i%2==0}
+print(dic)
+#output->{0: 'item0', 1: 'item1', 2: 'item2', 3: 'item3', 4: 'item4', 5: 'item5'}
+
+
+#set comprehension
+s={dress for dress in ["dress1","dress2","dress1","dress2"]}
+print(s)
+
+#generator comprehension
+c=(i for i in range(1,100) if i%2==0)
+#print(next(c))
+#print(next(c))
+for i in c:
+    print(i)
+
+
+        
+       
