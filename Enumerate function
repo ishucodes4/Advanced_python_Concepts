@@ -1,0 +1,7 @@
+#Enumerate function-> provides index and elements at same time in list,tuples and strings :)
+l=["ishan","ashutosh","anuradha","shiwani"]
+for index,element in enumerate(l):
+    print(index,element)
+    
+for index,element in enumerate(l,start=1): #-> for starting index @1
+    print(index,element)
