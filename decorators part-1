@@ -1,0 +1,15 @@
+#decorators->functions that changes other functions and returns them.
+#decorator takes fn as an argument and returns a function as well.
+
+def greet (fn):
+    def fun_ret():
+        print("WELCOME")
+        fn()
+        print("ENDING TATA")
+    return fun_ret
+        
+@greet
+def Hello():
+    print("namaste duniya")
+    
+print(Hello())
