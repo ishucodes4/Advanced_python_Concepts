@@ -1,0 +1,8 @@
+#generators are used in python to get a value on the fly. it's like it has all the ingredients to provide that value and whenever we call generator it shall return the value of that iteration only.Then again if you would call generator it shall return value of the next iteration. This process goes on till the end.
+def my_generator ():
+    for i in range(0,5):
+        yield i
+
+gen=my_generator() #creating instance of the generator :)
+for i in gen:
+    print(i)
