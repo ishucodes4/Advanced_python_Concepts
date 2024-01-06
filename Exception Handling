@@ -1,0 +1,19 @@
+x=int(input("Enter a number jiski table chahiye"))
+try:
+    for i in range (1,11):
+        print(x,"*",i,"=",x*i)
+except:
+    print("Invalid input") #acknowleding error if inpput="ishan"
+
+print("IMP CODE") #->always executed
+
+
+IMPORTANT SYNTAX->
+try:
+   #statements which could generate 
+   #exception
+except:
+   #solution of generated exception
+finally:
+    #block of code which is going to 
+    #execute in any situation
